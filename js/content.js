@@ -3,15 +3,19 @@
     var first = true;
     var firstLength = contentLength();
 
-    var config = {
-        isContent: false,
-        isFoot: true,
-        isAD: true
-    }
+    var config = {};
 
     chrome.storage.sync.get(["isContent", "isFoot", "isAD"], function (data) {
-        // alert(JSON.stringify(data));
-        config = data;
+        if ($.isEmptyObject(data)) {
+            config = {
+                isContent: false,
+                isFoot: true,
+                isAD: true
+            }
+            chrome.storage.sync.set(config)
+        } else {
+            config = data;
+        }
     })
 
 
