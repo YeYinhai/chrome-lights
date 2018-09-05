@@ -5,10 +5,11 @@
 
     var config = {
         isContent: false,
-        isFoot: true
+        isFoot: true,
+        isAD: true
     }
 
-    chrome.storage.sync.get(["isContent","isFoot"], function (data) {
+    chrome.storage.sync.get(["isContent", "isFoot", "isAD"], function (data) {
         // alert(JSON.stringify(data));
         config = data;
     })
@@ -48,11 +49,13 @@
         }
 
         // 去掉头部广告
-        $('.m').each((index, element) => {
-            if (element.innerText == '广告') {
-                $(element).parent().parent().hide();
-            }
-        });
+        if (config.isAD) {
+            $('.m').each((index, element) => {
+                if (element.innerText == '广告') {
+                    $(element).parent().parent().hide();
+                }
+            });
+        }
 
         // 设置容器高度
         $('#content_left').css({ "overflow": "auto", "padding-top": "20px", "width": "640px" });
