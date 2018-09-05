@@ -33,8 +33,5 @@
 			"run_at": "document_end"
 		}
 	],
-	"homepage_url": [
-		"https://github.com/YeYinhai",
-		"http://www.shashuwang.com:8080/"
-	]
+	"homepage_url": "https://github.com/YeYinhai"
 }
