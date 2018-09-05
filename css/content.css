@@ -1,0 +1,43 @@
+.head_nums_cont_outer.OP_LOG {
+    position: absolute !important;
+    top: -39px;
+    left: 688px;
+}
+
+#rs {
+    position: absolute;
+    top: 0px;
+    left: 688px;
+}
+
+#page .fk {
+    display: none;
+}
+
+#page .n,
+#page .pc {
+    border: 1px solid #0080ff !important;
+}
+
+#page strong {
+    height: 36px !important;
+}
+
+#page strong .pc {
+    height: 34px !important;
+}
+
+#page .fk_cur~.pc {
+    border: 1px solid #c00 !important;
+    height: 34px !important;
+}
+
+.container_l {
+    widows: 1300px !important;
+}
+
+#content_left>div:not(.c-container) {
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+}
