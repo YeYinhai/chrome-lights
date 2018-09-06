@@ -8,21 +8,28 @@
     <style>
         span {
             width: 80px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            line-height: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div style="display: flex; flex-direction: column;">
-        <span><input type="checkbox" id="isContent" /> 过滤内容
-        </span>
+    <div style="display: flex; flex-direction: column;width:80px;">
+        <label style="line-height: 20px;">百度</label>
+        <div style="border-top: 1px solid #000;">
+            <div>
+                <span><input type="checkbox" id="isContent" /> 过滤内容
+                </span>
+            </div>
+            <span> <input type="checkbox" id="isAD" /> 隐藏广告
+            </span>
 
-        <span> <input type="checkbox" id="isAD" /> 隐藏广告
-        </span>
-
-        <span> <input type="checkbox" id="isFoot" /> 隐藏底部
-        </span>
-
+            <span> <input type="checkbox" id="isFoot" /> 隐藏底部
+            </span>
+        </div>
     </div>
 </body>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
