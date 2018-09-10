@@ -17,3 +17,8 @@
 - 调整右侧相关推荐布局
 - 隐藏底部公司信息（可选）
 
+
+### 图解
+![avatar](/img/image1.png)
+
+![avatar](/img/image2.png)
