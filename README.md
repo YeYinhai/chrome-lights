@@ -1,5 +1,8 @@
 # 安装
 
+- [安装包](https://github.com/YeYinhai/chrome-lights/tree/master/dist)
+- [360浏览器市场](https://ext.se.360.cn/webstore/search/%E7%81%AF%E7%81%AB)
+
 # 谷歌插件-灯火(lights)
 
 制作此插件的主要初衷是：~~帮助百度再次战胜谷歌。~~  
