@@ -2,12 +2,13 @@
 var config = {}
 
 window.onload = function () {
-    chrome.storage.sync.get(["isContent", "isFoot", "isAD"], function (data) {
+    chrome.storage.sync.get(["isContent", "isFoot", "isAD", "isHotspot"], function (data) {
         // alert(JSON.stringify(data));
         config = data;
         document.getElementById('isContent').checked = data.isContent;
         document.getElementById('isFoot').checked = data.isFoot;
         document.getElementById('isAD').checked = data.isAD;
+        document.getElementById('isHotspot').checked = data.isHotspot;
     })
 
 }

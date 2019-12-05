@@ -1,0 +1,34 @@
+#content_left {
+  overflow: auto !important;
+  padding-top: 20px !important;
+  padding-bottom: 80px !important;
+  width: 640px !important;
+}
+
+#content_right {
+  display: none;
+  overflow: auto !important;
+  max-height: 850px !important;
+  padding-top: 150px !important;
+}
+
+#foot {
+  display: none;
+}
+
+.c-abstract {
+  display: none;
+}
+
+.c-abstract > p > p {
+  display: none;
+}
+
+#page {
+  position: fixed !important;
+  bottom: 0 !important;
+}
+
+#page > a {
+  height: 36px !important;
+}
